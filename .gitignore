@@ -1,2 +1,52 @@
+# Бинарники
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+main
+dojo
+
+# Go
+*.test
+*.out
+vendor/
+go.work
+
+# Переменные окружения
 .env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Логи
+*.log
+
+# База данных (локальные файлы)
+*.db
+*.sqlite
+
+# Временные файлы
+tmp/
+temp/
+.tmp/
+
+# Air (hot-reload)
+tmp/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+
 info.txt
