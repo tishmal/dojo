@@ -12,7 +12,7 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/gofiber/fiber/v2/middleware/logger"
-	"gorm.io/driver/postgresql"
+	postgresGorm "gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
 
@@ -29,7 +29,7 @@ func main() {
 	}
 	
 	// Подключаемся к PostgreSQL
-	db, err := gorm.Open(postgresql.Open(dbURL), &gorm.Config{})
+	db, err := gorm.Open(postgresGorm.Open(dbURL), &gorm.Config{})
 	if err != nil {
 		log.Fatal("Не удалось подключиться к БД:", err)
 	}
